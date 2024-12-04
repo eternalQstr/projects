@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="reg_style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Регистрация</h2>
+        <form id="main-form" method="post">
+            <p>
+                <label for="name">Имя: </label>
+                <input type="text" name="name" id="name" autofocus="on">
+            </p>
+            <p>
+                <label for="birthdate">Дата рождения: </label>
+                <input type="date" name="birthdate" required>
+            </p>
+            <p>
+                <label for="email">Эл. почта: </label>
+                <input type="email" name="email" id="email" placeholder="pochta@mail.com">
+            </p>
+            <p>
+                <label for="pass">Пароль: </label>
+                <input type="password" name="pass" id="pass">
+            </p>
+            <p>
+                <label for="repass">Повторите пароль: </label>
+                <input type="password" name="repass" id="repass">
+            </p>
+            <p>
+                <label for="phone">Тел.: </label>
+                <input type="tel" name="phone" id="phone" placeholder="X-(XXX)-XXX-XX-XX" pattern="\d-\(\d{3}\)-\d{3}-\d{2}-\d{2}" required>
+            </p>
+            <p>Пол:
+                <input type="radio" name="state" value="male">
+                <label for="state">Мужской</label>
+                <input type="radio" name="state" value="female">
+                <label for="state">Женский</label>
+            </p>
+            <p>
+                <label for="file">Приложите ваше фото (.jpeg .png .jpg): </label><br>
+                <input type="file" name="file" id="file" style="margin-top: 10px;">
+            </p><br>
+
+            <p><span id="error" style="color:red;"></span></p>
+
+            <input type="button" name="back" id="back" value="Назад" onclick="document.location = 'index.html'">
+            <input type="submit" name="submit" value="Зарегистрироваться">
+        </form>
+        <script src="reg.js"></script>
+    </div>
+</body>
+</html>
