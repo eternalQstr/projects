@@ -23,6 +23,6 @@ function checkForm(event){
         document.getElementById('error').innerHTML = error;
     else {
         alert("Данные введены корректно!");
-        window.location(document.location = "D:/localhost/IT-TOP project/blog.html");
+        window.location(document.location = "blog.html");
     }
 }
